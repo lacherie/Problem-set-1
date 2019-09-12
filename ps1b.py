@@ -21,3 +21,5 @@ while current_savings <= (portion_down_payment*total_cost):
     if months_count in range(0, 1000, 6):
         monthly_salary += monthly_salary*semi_annual_raise
 print("Number of months:",months_count)
+
+

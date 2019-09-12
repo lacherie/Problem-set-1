@@ -17,3 +17,5 @@ while current_savings <= (portion_down_payment*total_cost):
     current_savings += current_savings*r/12 + monthly_salary*portion_saved
     months_count += 1
 print("Number of months: ",months_count)
+
+
