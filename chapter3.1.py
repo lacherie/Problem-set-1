@@ -36,13 +36,32 @@
 #else:
 #   print("No such pair of integers exists.")
 
-    i = int(input("Enter an integer: "))
-root = 0
-pwr = 0
-for root in range (-i, i):
+#    i = int(input("Enter an integer: "))
+#root = 0
+#pwr = 0
+#for root in range (-i, i):
+#    for pwr in range(1, 6):
+#        if i == root ** pwr:
+#            print("Root is",root)
+#            print("Power is",pwr)     
+#            root = i + 1
+
+i = int(input("Enter an integer: "))
+root = -i
+z = 0
+while root in range(-i, i):
     for pwr in range(1, 6):
         if i == root ** pwr:
-            print("Root is",root)
+            if i > 0:
+                    print("Root is",abs(root))
+            else:
+                    print("Root is",root)
             print("Power is",pwr)     
-            root = i + 1
+            z = 1
+    if z == 1:
+        break
+    root += 1
+if z != 1:
+    print("No such pair of integers exists.")
+
 
