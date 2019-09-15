@@ -21,7 +21,7 @@
 #    else:
 #        root += 1
 #else:
-#    print("no such pair of integers exist")
+#    print("no such pair of integers exists.")
     
 
 i = int(input("Enter an integer: "))
