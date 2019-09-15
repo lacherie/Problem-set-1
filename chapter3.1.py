@@ -27,11 +27,12 @@
 i = int(input("Enter an integer: "))
 root = 0
 pwr = 0
-while pwr <= 6:
-    root += 1
-    if i == root**pwr:
-        print("Root is",root)
-        print("Power is",pwr)
+for root in range (-1000, 1000):
+    for pwr in range(0,7):
+        if i == root ** pwr:
+            print("Root is",root)
+            print("Power is",pwr)
+            break
 else:
-    print("no such pair of integers exists")
+    print("No such pair of integers exists.")
 
