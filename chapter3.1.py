@@ -24,15 +24,25 @@
 #    print("no such pair of integers exists.")
     
 
-i = int(input("Enter an integer: "))
+#i = int(input("Enter an integer: "))
+#root = 0
+#pwr = 0
+#for root in range (-1000, 1000):
+#    for pwr in range(0,7):
+#        if i == root ** pwr:
+#            print("Root is",root)
+#            print("Power is",pwr)
+#            break
+#else:
+#   print("No such pair of integers exists.")
+
+    i = int(input("Enter an integer: "))
 root = 0
 pwr = 0
-for root in range (-1000, 1000):
-    for pwr in range(0,7):
+for root in range (-i, i):
+    for pwr in range(1, 6):
         if i == root ** pwr:
             print("Root is",root)
-            print("Power is",pwr)
-            break
-else:
-    print("No such pair of integers exists.")
+            print("Power is",pwr)     
+            root = i + 1
 
