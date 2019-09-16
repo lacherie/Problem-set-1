@@ -15,7 +15,6 @@ portion_saved = (high + low)//2
 current_savings = 0
 epsilon = 10000
 monthly_salary = annual_salary/12
-num_guesses = 0
 possible = True
 while abs(current_savings - down_payment) > epsilon and possible == True:
     current_savings = 0
@@ -28,13 +27,13 @@ while abs(current_savings - down_payment) > epsilon and possible == True:
        low = portion_saved
     else:
        high = portion_saved
-    if portion_saved == 9998:
+    if portion_saved == 9999:
         print("It is not possible to pay the down payment in three years.")
         possible = False
     portion_saved = (high + low)//2
-    num_guesses += 1
+    num_steps += 1
     monthly_salary = annual_salary/12
 if possible == True:
     best_savings_rate = portion_saved/10000
     print("Best savings rate: ", best_savings_rate)
-    print("Steps in bisection search: ", num_guesses)
+    print("Steps in bisection search: ", num_steps)
