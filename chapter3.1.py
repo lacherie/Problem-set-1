@@ -21,17 +21,47 @@
 #    else:
 #        root += 1
 #else:
-#    print("no such pair of integers exist")
+#    print("no such pair of integers exists.")
     
 
+#i = int(input("Enter an integer: "))
+#root = 0
+#pwr = 0
+#for root in range (-1000, 1000):
+#    for pwr in range(0,7):
+#        if i == root ** pwr:
+#            print("Root is",root)
+#            print("Power is",pwr)
+#            break
+#else:
+#   print("No such pair of integers exists.")
+
+#    i = int(input("Enter an integer: "))
+#root = 0
+#pwr = 0
+#for root in range (-i, i):
+#    for pwr in range(1, 6):
+#        if i == root ** pwr:
+#            print("Root is",root)
+#            print("Power is",pwr)     
+#            root = i + 1
+
 i = int(input("Enter an integer: "))
-root = 0
-pwr = 0
-while pwr <= 6:
+root = -i
+z = 0
+while root in range(-i, i):
+    for pwr in range(1, 6):
+        if i == root ** pwr:
+            if i > 0:
+                    print("Root is",abs(root))
+            else:
+                    print("Root is",root)
+            print("Power is",pwr)     
+            z = 1
+    if z == 1:
+        break
     root += 1
-    if i == root**pwr:
-        print("Root is",root)
-        print("Power is",pwr)
-else:
-    print("no such pair of integers exists")
+if z != 1:
+    print("No such pair of integers exists.")
+
 
