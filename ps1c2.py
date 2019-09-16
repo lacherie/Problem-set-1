@@ -29,7 +29,7 @@ while abs(current_savings - down_payment) > epsilon and possible == True:
         possible = False # stop the while loop if impossible to save for down payment, even if 99.99% of salary are saved for 3 years
     portion_saved = (high + low) // 2
     num_steps += 1
-    monthly_salary = annual_salary / 12 # clear the salary from the semi-annual raises
+    monthly_salary = annual_salary / 12 # clear salary from raises
 if possible == True:
     best_savings_rate = portion_saved / 10000 # output should be a decimal
     print("Best savings rate: ", best_savings_rate)
